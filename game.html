@@ -37,8 +37,9 @@
         let previousMines = [];
 
         function startGame() {
-            const [rows, cols] = document.getElementById('sizeInput').value.split('x').map(Number);
-            if (rows > 0 && cols > 0) {
+            const input = document.getElementById('sizeInput').value;
+            const [rows, cols] = input.split('x').map(Number);
+            if (rows > 0 && cols > 0 && Number.isInteger(rows) && Number.isInteger(cols)) {
                 gridSize = { rows, cols };
                 initializeBoard();
             } else {
@@ -112,7 +113,6 @@
 
         function revealCell(row, col) {
             const cell = document.getElementById('board').rows[row].cells[col];
-
             if (cell.classList.contains('flag') || cell.classList.contains('clicked') || gameEnded) return;
 
             const value = +cell.dataset.value;
