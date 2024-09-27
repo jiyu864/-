@@ -11,4 +11,4 @@
           지뢰찾기 실패시, 사용자가 실패한 게임을 다시 플레이 할 것인지 선택지가 있으며 성공시 성공했다는 축하 메세지가 뜬다.
           지뢰찾기 게임을 만들면서 chatgpt의 도움을 받았다.
 
-깃헙 링크 - https://github.com/jiyu864/지뢰찾기
+깃헙 링크 - https://github.com/jiyu864/Minesweeper_Master
